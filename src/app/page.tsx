@@ -1,103 +1,187 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="px-10">
+      {/* Fixed Header */}
+      {/* <header className="fixed w-full bg-white shadow z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+          <div className="text-xl font-bold">Sergio Martin</div>
+          <nav>
+            <ul className="flex space-x-6">
+              <li>
+                <a href="#about" className="hover:text-blue-500">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#experience" className="hover:text-blue-500">
+                  Experience
+                </a>
+              </li>
+              <li>
+                <a href="#education" className="hover:text-blue-500">
+                  Education
+                </a>
+              </li>
+              <li>
+                <a href="#projects" className="hover:text-blue-500">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-blue-500">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header> */}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Main Content */}
+      <main className="lg:flex lg:flex-row lg:justify-between">
+        <section id="about" className="w-[48%] lg:sticky lg:top-0 lg:max-h-screen lg:flex-col lg:py-24">
+          <h2 className="text-5xl font-bold">
+            <Link href="/">Gilberto Davis</Link>
+          </h2>
+          <p>Full Stack Engineer</p>
+          <p className="text-lg text-gray-600">
+            I am an experienced engineer with a strong track record in
+            end-to-end software development. Proven leadership delivering high
+            impact solutions. Technically adept and committed to staying current
+            with emerging technologies.
+          </p>
+        </section>
+
+        <div className="w-[52%] lg:py-24">
+          <section id="experience" className="bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-3xl font-bold mb-8">Experience</h2>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                    Lead Software Engineer @ Sigo Seguros
+                  </h3>
+                  <span className="text-gray-500">
+                    Sep 2023 - Present | Remote - US
+                  </span>
+                  <ul className="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                    <li>
+                      Led the creation of a front-end design system and
+                      mono-repository to boost UI consistency.
+                    </li>
+                    <li>
+                      Revamped the user portal with features like renewals,
+                      reinstatements, and payment handling.
+                    </li>
+                    <li>
+                      Spearheaded the transition to a modular, domain-driven
+                      design (DDD) and CQRS-based architecture.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                    Senior Software Engineer @ Hinge Health
+                  </h3>
+                  <span className="text-gray-500">
+                    Feb 2022 - Sep 2023 | Remote - US
+                  </span>
+                  <ul className="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                    <li>Led the user onboarding and activation team.</li>
+                    <li>
+                      Architected and contributed to core user-facing mobile/web
+                      applications.
+                    </li>
+                    <li>
+                      Developed an in-app orders feature saving the company
+                      significant costs.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                    Senior Software Engineer @ Oracle
+                  </h3>
+                  <span className="text-gray-500">
+                    Jan 2021 - Feb 2022 | Austin, TX
+                  </span>
+                  <ul className="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                    <li>
+                      Co-led the Development Lifecycle User Experience Team.
+                    </li>
+                    <li>
+                      Architected front-end Oracle Cloud plugin applications.
+                    </li>
+                    <li>
+                      Coordinated weekly release deployments across multiple
+                      environments.
+                    </li>
+                  </ul>
+                </div>
+                {/* Additional experience items can be added here */}
+              </div>
+            </div>
+          </section>
+
+          {/* Education Section */}
+          <section id="education" className="py-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-3xl font-bold mb-8">Education</h2>
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                    MS Computer Science @ Georgia Tech
+                  </h3>
+                  <span className="text-gray-500">
+                    Jan 2018 - Jun 2019 | Atlanta, GA
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                    Software Engineering Immersive Program @ Hack Reactor
+                  </h3>
+                  <span className="text-gray-500">
+                    Sep 2015 - Dec 2015 | Austin, TX
+                  </span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold">
+                    BS Electronics Engineering (Automation) @ UNEFA
+                  </h3>
+                  <span className="text-gray-500">
+                    Sep 2003 - Oct 2008 | Venezuela
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Projects Section */}
+          <section id="projects" className="bg-white py-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-3xl font-bold mb-8">Projects</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-gray-100 p-6 rounded-lg shadow">
+                  <h3 className="text-xl font-semibold mb-2">Project One</h3>
+                  <p className="text-gray-700">
+                    A brief description of a significant project.
+                  </p>
+                </div>
+                <div className="bg-gray-100 p-6 rounded-lg shadow">
+                  <h3 className="text-xl font-semibold mb-2">Project Two</h3>
+                  <p className="text-gray-700">
+                    A brief description of another project.
+                  </p>
+                </div>
+                {/* More project cards can be added here */}
+              </div>
+            </div>
+          </section>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
