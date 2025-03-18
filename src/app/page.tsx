@@ -1,12 +1,9 @@
 "use client";
-import { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi"; // Hamburger and close icons
 import { motion } from "framer-motion";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import NavigationBar from "@components/navigationBar/NavigationBar";
+import HeroSection from "@/components/heroSection/HeroSection";
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   const experiences = [
     {
       title: "Full Stack Developer",
@@ -21,141 +18,10 @@ export default function Home() {
   return (
     <>
       <div className="flex min-h-screen bg-gray-900 text-white pr-5">
-        <nav className="fixed top-8 right-8 z-50">
-          <ul className="hidden md:flex gap-6 text-gray-400 text-lg">
-            <li>
-              <a
-                href="#home"
-                className="hover:text-blue-400 transition-colors font-medium"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#experience"
-                className="hover:text-blue-400 transition-colors font-medium"
-              >
-                Experience
-              </a>
-            </li>
-            <li>
-              <a
-                href="#projects"
-                className="hover:text-blue-400 transition-colors font-medium"
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="hover:text-blue-400 transition-colors font-medium"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="text-gray-400 hover:text-blue-400 transition-colors focus:outline-none"
-            >
-              {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-            </button>
-          </div>
-
-          {menuOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
-              className="absolute top-14 right-0 bg-gray-800 border border-gray-700 rounded-lg w-48 py-4 shadow-lg"
-            >
-              <ul className="flex flex-col items-start text-gray-400 text-lg">
-                <li className="w-full px-4 py-2 hover:bg-gray-700">
-                  <a
-                    href="#home"
-                    onClick={() => setMenuOpen(false)}
-                    className="block w-full font-medium"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li className="w-full px-4 py-2 hover:bg-gray-700">
-                  <a
-                    href="#experience"
-                    onClick={() => setMenuOpen(false)}
-                    className="block w-full font-medium"
-                  >
-                    Experience
-                  </a>
-                </li>
-                <li className="w-full px-4 py-2 hover:bg-gray-700">
-                  <a
-                    href="#projects"
-                    onClick={() => setMenuOpen(false)}
-                    className="block w-full font-medium"
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li className="w-full px-4 py-2 hover:bg-gray-700">
-                  <a
-                    href="#contact"
-                    onClick={() => setMenuOpen(false)}
-                    className="block w-full font-medium"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </motion.div>
-          )}
-        </nav>
+        <NavigationBar />
 
         <main className="lg:ml-20 ml-4 flex-1">
-          <section id="home" className="min-h-screen flex items-center">
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1 }}
-            >
-              <h1 className="text-5xl font-bold mb-4">
-                Hi, I&apos;m{" "}
-                <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                  Gilberto Davis
-                </span>
-              </h1>
-              <h2 className="text-3xl text-gray-400 mb-6">Software Engineer</h2>
-              <p className="text-lg text-gray-400 max-w-2xl">
-                I&apos;m a software developer specializing in building (and
-                occasionally designing) exceptional digital experiences.
-                Currently focused on modern web technologies.
-              </p>
-
-              <div className="mt-20 flex flex-row gap-5">
-                <a
-                  href="https://github.com/GilbDavis"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FiGithub className="text-2xl text-gray-400 hover:text-blue-400 transition-colors w-8 h-8" />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/gilbertodavis/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FiLinkedin className="text-2xl text-gray-400 hover:text-blue-400 transition-colors  w-8 h-8" />
-                </a>
-                <a href="mailto:gilberto.davis02@gmail.com">
-                  <FiMail className="text-2xl text-gray-400 hover:text-blue-400 transition-colors  w-8 h-8" />
-                </a>
-              </div>
-            </motion.div>
-          </section>
+          <HeroSection />
 
           <section id="experience" className="py-20">
             <h3 className="text-2xl text-gray-400 mb-12">Experience</h3>
@@ -241,7 +107,7 @@ export default function Home() {
 
           <footer className="border-t border-gray-700 py-8 mt-20">
             <p className="text-gray-400 text-center">
-              © {new Date().getFullYear()} Your Name. All rights reserved.
+              © {new Date().getFullYear()} Gilberto Davis. All rights reserved.
             </p>
           </footer>
         </main>
