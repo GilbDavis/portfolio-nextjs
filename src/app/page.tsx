@@ -9,10 +9,10 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-      <div className="flex min-h-screen bg-gray-900 text-white pr-5">
+      <div className="flex min-h-screen bg-gray-900 text-white">
         <NavigationBar />
 
-        <main className="lg:ml-20 ml-4 flex-1">
+        <main className="flex-1">
           <HeroSection />
           <ExperienceSection />
           <ProjectSection />

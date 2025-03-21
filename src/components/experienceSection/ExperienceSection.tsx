@@ -12,7 +12,7 @@ const EXPERIENCES = [
 ];
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="py-20">
+    <section id="experience" className="py-20 lg:px-20 px-8">
       <h3 className="text-2xl text-gray-400 mb-12">Experience</h3>
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-400"></div>

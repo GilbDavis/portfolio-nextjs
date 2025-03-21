@@ -4,7 +4,7 @@ import React from "react";
 const PROJECTS = [1, 2, 3, 4];
 const ProjectSection = () => {
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-20 lg:px-20 px-8">
       <h3 className="text-2xl text-gray-400 mb-12">Featured Projects</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {PROJECTS.map((project) => (
