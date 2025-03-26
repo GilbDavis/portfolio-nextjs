@@ -1,40 +1,50 @@
-import { motion } from "framer-motion";
 import React from "react";
+import WorkTag from "@components/work/WorkTag";
 
 const EXPERIENCES = [
   {
-    title: "Full Stack Developer",
+    title: "Full-Stack Software Developer",
     company: "DBAccess",
-    duration: "March 2021 - Present",
+    duration: "2021 - Present",
     description:
       "Leading the development team in building scalable web applications, implementing best practices, and mentoring junior developers.",
+    tags: ["React", "Node.js", "GCP", "Docker", "PostgreSQL"],
   },
 ];
+const lastExperience = EXPERIENCES.length - 1;
+
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="py-20 lg:px-20 px-8">
-      <h3 className="text-2xl text-gray-400 mb-12">Experience</h3>
-      <div className="relative">
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-400"></div>
-        <div className="ml-8 space-y-12">
-          {EXPERIENCES.map((job, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ y: -5 }}
-              className="relative p-6 bg-gray-800 border border-gray-700 rounded-lg transition-all"
-            >
-              <div className="absolute -left-10 top-4">
-                <span className="block h-4 w-4 bg-blue-400 rounded-full border-2 border-gray-900"></span>
-              </div>
-              <h4 className="text-xl font-semibold mb-1">{job.title}</h4>
-              <p className="text-gray-400 mb-1">
-                {job.company} | {job.duration}
+    <section id="experience" className="container py-24 sm:py-32 border-t">
+      <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-16">
+        Work Experience
+      </h2>
+      {EXPERIENCES.map((experience, index) => (
+        <div
+          className={`space-y-12 ${
+            index === lastExperience ? "mb-0" : "mb-20"
+          }`}
+          key={index}
+        >
+          <div className="grid gap-4 md:grid-cols-[1fr_3fr] items-start">
+            <div className="text-muted-foreground">
+              <p className="font-semibold text-foreground">
+                {experience.duration}
               </p>
-              <p className="text-gray-400">{job.description}</p>
-            </motion.div>
-          ))}
+              <p>{experience.title}</p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold">{experience.company}</h3>
+              <p className="text-muted-foreground">{experience.description}</p>
+              <div className="flex flex-wrap gap-2">
+                {experience.tags.map((tag, index) => (
+                  <WorkTag key={index}>{tag}</WorkTag>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      ))}
     </section>
   );
 };
