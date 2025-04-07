@@ -1,5 +1,5 @@
 import React from "react";
-import WorkTag from "@components/work/WorkTag";
+import WorkTag from "@/components/tags/WorkTag";
 
 const EXPERIENCES = [
   {
