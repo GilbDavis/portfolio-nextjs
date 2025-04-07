@@ -24,12 +24,12 @@ const HeaderSection = () => {
             >
               Experience
             </Link>
-            <Link
+            {/* <Link
               href="#projects"
               className="flex items-center text-sm font-medium text-muted-foreground hover:text-foreground"
             >
               Projects
-            </Link>
+            </Link> */}
             <Link
               href="#contact"
               className="flex items-center text-sm font-medium text-muted-foreground hover:text-foreground"
