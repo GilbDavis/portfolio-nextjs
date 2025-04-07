@@ -6,8 +6,66 @@ const EXPERIENCES = [
     title: "Full-Stack Software Developer",
     company: "DBAccess",
     duration: "2021 - Present",
-    description:
-      "Leading the development team in building scalable web applications, implementing best practices, and mentoring junior developers.",
+    description: (
+      <>
+        <p>
+          Responsible for building components of technology solutions, as well
+          as contributing to their design with the main focus on Next.js and
+          Express frameworks in Sigoseguros.com As part of the activities, the
+          following stand out:
+        </p>
+        <ul className="list-disc pl-10 list-outside">
+          <li>
+            Designed and implemented a payments module using Stripe, optimizing
+            the transaction processing experience.
+          </li>
+          <li>
+            Integrated an email management and sending system using Customer.io,
+            improving the automation of communication with users.{" "}
+          </li>
+          <li>
+            Automated key processes using Bash scripts, increasing operational
+            efficiency.
+          </li>
+          <li>
+            Strong experience in version control with Git and project
+            collaboration using GitHub.
+          </li>
+          <li>
+            Actively participated in the review of Pull Requests, ensuring code
+            quality and consistency.
+          </li>
+          <li>
+            Practical knowledge of command line tools (CLI) such as Socotra and
+            Stripe, facilitating advanced configurations and operations.
+          </li>
+          <li>
+            Implemented and managed automated testing and test case creation
+            using Postman, ensuring the quality of services.
+          </li>
+          <li>
+            Proposed and developed continuous improvements to the product,
+            standing out for my proactive approach to innovation.
+          </li>
+          <li>
+            Resolved level 3 technical support tickets using the Hubspot
+            platform, improving customer satisfaction.
+          </li>
+          <li>
+            Implemented TDD (Test-Driven Development) in unit tests,
+            strengthening code robustness.
+          </li>
+          <li>
+            Led the migration of Goemerchant payment processing to Stripe,
+            modernizing the payment infrastructure.
+          </li>
+          <li>
+            Advanced database management, including query creation and
+            optimization in PostgreSQL.
+          </li>
+        </ul>
+      </>
+    ),
     tags: ["React", "Node.js", "GCP", "Docker", "PostgreSQL"],
   },
 ];
