@@ -1,10 +1,10 @@
 "use client";
 import ExperienceSection from "../components/experienceSection/ExperienceSection";
 import AboutMeSection from "../components/aboutMeSection/AboutMeSection";
-import ContactSection from "../components/contactSection/ContactSection";
 import HeroSection from "../components/heroSection/HeroSection";
 import HeaderSection from "../components/headerSection/HeaderSection";
 import Footer from "../components/Footer";
+import EducationSection from "../components/educationSection/EducationSection";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <HeroSection />
         <AboutMeSection />
         <ExperienceSection />
-        <ContactSection />
+        <EducationSection />
       </main>
 
       <Footer />

@@ -24,18 +24,24 @@ const HeaderSection = () => {
             >
               Experience
             </Link>
+            <Link
+              href="#education"
+              className="flex items-center text-sm font-medium text-muted-foreground hover:text-foreground"
+            >
+              Education
+            </Link>
             {/* <Link
               href="#projects"
               className="flex items-center text-sm font-medium text-muted-foreground hover:text-foreground"
             >
               Projects
             </Link> */}
-            <Link
+            {/* <Link
               href="#contact"
               className="flex items-center text-sm font-medium text-muted-foreground hover:text-foreground"
             >
               Contact
-            </Link>
+            </Link> */}
           </nav>
         </div>
         <div className="flex items-center gap-2 mr-4">
@@ -81,6 +87,7 @@ const HeaderSection = () => {
             download="Gilberto_Davis_Resume.pdf"
             href="/gilberto_resume.pdf"
             target="_blank"
+            className="hover:scale-110 hover:duration-150 duration-150"
           >
             <Button className="ml-4 hidden md:flex hover:cursor-pointer">
               Download Resume

@@ -8,7 +8,7 @@ const currentYear = new Date().getFullYear();
 const Footer = () => {
   return (
     <footer className="border-t py-6 md:py-8">
-      <div className="container flex flex-col items-center justify-between gap-4 md:flex-row md:justify-center md:mx-auto">
+      <div className="container flex flex-col items-center justify-between gap-4 md:justify-center md:mx-auto">
         <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
           © {currentYear} Gilberto Davis. All rights reserved.
         </p>

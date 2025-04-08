@@ -57,7 +57,7 @@ const EXPERIENCES = [
           </li>
           <li>
             Led the migration of Goemerchant payment processing to Stripe,
-            modernizing the payment infrastructure.
+            modernizing the payment infrastructure and failure rates.
           </li>
           <li>
             Advanced database management, including query creation and
@@ -93,7 +93,9 @@ const ExperienceSection = () => {
             </div>
             <div className="space-y-4">
               <h3 className="text-xl font-bold">{experience.company}</h3>
-              <p className="text-muted-foreground">{experience.description}</p>
+              <div className="text-muted-foreground">
+                {experience.description}
+              </div>
               <div className="flex flex-wrap gap-2">
                 {experience.tags.map((tag, index) => (
                   <WorkTag key={index}>{tag}</WorkTag>

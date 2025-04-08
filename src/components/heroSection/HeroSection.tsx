@@ -1,8 +1,6 @@
 import React from "react";
 import photo from "@public/photo.png";
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@components/ui/button";
 
 const HeroSection = () => {
   return (
@@ -17,10 +15,10 @@ const HeroSection = () => {
             Hello, I&apos;m <span className="text-primary">Gilberto Davis</span>
           </h1>
           <p className="text-xl text-muted-foreground">
-            A passionate software engineer specializing in building exceptional
+            A passionate software Developer specializing in building exceptional
             digital experiences.
           </p>
-          <div className="flex gap-4">
+          {/* <div className="flex gap-4">
             <Link href="#contact">
               <Button className="hover:cursor-pointer" size="lg">
                 Get in touch
@@ -35,7 +33,7 @@ const HeroSection = () => {
                 View my work
               </Button>
             </Link>
-          </div>
+          </div> */}
         </div>
         <div className="flex justify-center lg:justify-end">
           <div className="relative h-[350px] w-[350px] rounded-full overflow-hidden border-4 border-primary/50 shadow-xl">

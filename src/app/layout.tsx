@@ -9,11 +9,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Gilberto Davis - Software Engineer",
-  description: "Software Engineer from Panamá",
+  title: "Gilberto Davis - Software Developer",
+  description: "Software Developer from Panamá",
   applicationName: "Gilberto Davis",
   keywords: [
-    "Software Engineer",
+    "Software Developer",
     "Panamá",
     "Developer",
     "Typescript",
