@@ -4,7 +4,7 @@ import SkillTagContainer from "../containers/SkillTagContainer";
 
 const AboutMeSection = () => {
   return (
-    <section id="about" className="container py-24 sm:py-32 border-t relative">
+    <section id="about" className="container py-24 sm:py-32 border-t relative mx-auto">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute top-[30%] -right-[20%] h-[400px] w-[400px] rounded-full bg-gradient-to-br from-blue-500/5 to-purple-500/10 blur-3xl"></div>
       </div>

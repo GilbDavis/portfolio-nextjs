@@ -73,7 +73,7 @@ const lastExperience = EXPERIENCES.length - 1;
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="container py-24 sm:py-32 border-t">
+    <section id="experience" className="container py-24 sm:py-32 border-t mx-auto">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-16">
         Work Experience
       </h2>

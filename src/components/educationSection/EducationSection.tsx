@@ -5,7 +5,7 @@ const EducationSection = () => {
   return (
     <section
       id="education"
-      className="container py-24 sm:py-32 border-t relative"
+      className="container py-24 sm:py-32 border-t relative mx-auto"
     >
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -bottom-[30%] -right-[20%] h-[400px] w-[400px] rounded-full bg-gradient-to-br from-purple-500/10 to-blue-500/5 blur-3xl"></div>

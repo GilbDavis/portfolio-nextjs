@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="container py-24 sm:py-32 relative overflow-hidden">
+    <section className="container py-24 sm:py-32 relative overflow-hidden mx-auto">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -top-[40%] -right-[10%] h-[500px] w-[500px] rounded-full bg-gradient-to-br from-primary/20 to-primary/5 blur-3xl"></div>
         <div className="absolute -bottom-[30%] -left-[10%] h-[500px] w-[500px] rounded-full bg-gradient-to-br from-blue-500/10 to-purple-500/20 blur-3xl"></div>
