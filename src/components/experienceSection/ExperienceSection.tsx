@@ -3,9 +3,16 @@ import WorkTag from "@/components/tags/WorkTag";
 
 const EXPERIENCES = [
   {
-    title: "Full-Stack Software Developer",
+    title: "Sr. Full Stack Developer",
+    company: "Itti Digital",
+    duration: "Sept. 2025 - Present",
+    description: <></>,
+    tags: ["React", "Node.JS", "MicroServices", "AWS"],
+  },
+  {
+    title: "Full Stack Software Developer",
     company: "DBAccess",
-    duration: "2021 - Present",
+    duration: "Feb. 2021 - Present",
     description: (
       <>
         <p>
@@ -73,7 +80,10 @@ const lastExperience = EXPERIENCES.length - 1;
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="container py-24 sm:py-32 border-t mx-auto">
+    <section
+      id="experience"
+      className="container py-24 sm:py-32 border-t mx-auto"
+    >
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-16">
         Work Experience
       </h2>
