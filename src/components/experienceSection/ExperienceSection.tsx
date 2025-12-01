@@ -12,7 +12,7 @@ const EXPERIENCES = [
   {
     title: "Full Stack Software Developer",
     company: "DBAccess",
-    duration: "Feb. 2021 - Present",
+    duration: "Feb. 2021 - Sept. 2025",
     description: (
       <>
         <p>
